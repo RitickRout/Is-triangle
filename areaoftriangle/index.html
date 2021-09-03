@@ -5,8 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Area</title>
+    <style>
+        *{
+            margin: 0ch;
+        }
+        .navigation{
+            color: white;
+            display: flex;
+            flex-direction: column;
+            background-color:black;
+            padding: 1rem;
+            
+           ;
+        }
+        ul{
+            display: flex;
+            list-style: none;
+
+        }
+        .link 
+        {
+            text-decoration: none;
+            border: 0.5px solid white;
+            border-radius: 0.4rem;
+            color:white;
+            margin-left: 1rem;
+            cursor: pointer;
+        }
+        .nav-brand{
+            font-size: 1.5rem;
+            padding-bottom: 2rem;
+        }
+        .nav-brand ul li {
+            display:flex;
+            justify-content: center;
+           
+
+        }
+
+        .link:hover{
+            background: white;
+            color: black;
+        }
+        .link-active
+        {
+            font-weight: bolder;
+            
+        }
+    </style>
 </head>
 <body>
+    <nav class="navigation">
+        <div class="nav-brand">Triangle</div>
+        <ul >
+            <li >
+                <a class="link " href="/index.html"> is Triangle</a> </li>
+            <li >
+                <a class="link" href="/traingleQuiz/indexquiz.html">Triangle Quiz</a> </li>
+            <li >
+                <a class="link" href="/calculatehypo/index.html"> Calculate Hypotenuse</a>  </li>
+                <li>
+                    <a class="link link-active" href="/areaoftriangle/index.html" > area of triangle</a>
+                </li>
+        </ul>
+    </nav>
     <h1>Area of triangle</h1>
     <label for="base">base</label>
     <input type="number" class="input-1">
