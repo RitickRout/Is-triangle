@@ -4,7 +4,7 @@ const output=document.querySelector("#out-put");
 
 const quizAnswer = ["90","90"];
 
-console.log(output,submitbtn,quizForm);
+
 
 function calculateScore()
 {
@@ -19,7 +19,7 @@ function calculateScore()
      }
      index++;
  }
- console.log(score);
+ output.innerText="Score is = "+score;
 }
 
 submitbtn.addEventListener("click", calculateScore);
